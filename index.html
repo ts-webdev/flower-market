@@ -29,17 +29,21 @@
 
   <body class="inter-regular">
     <!-- --------------Header----------------- -->
-    <header class="container mx-auto">
+    <header class="sm:container sm:mx-auto">
       <!-- Navbar -->
-      <nav class="flex justify-between items-center mt-6">
+      <nav class="flex justify-between items-center mt-6 mx-4 sm:mx-0">
         <div>
-          <img src="./assets/logo.png" alt="" />
+          <img class="w-[63px] sm:w-auto" src="./assets/logo.png" alt="" />
         </div>
         <div>
           <ul class="flex gap-5 text-[#8987A1]">
-            <li><a class="font-bold text-[#252432]" href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About us</a></li>
+            <li>
+              <a class="font-bold text-[#252432] hidden sm:block" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="hidden sm:block"><a href="#">Shop</a></li>
+            <li class="hidden sm:block"><a href="#">About us</a></li>
             <li>
               <a class="text-black" href="#"
                 ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)
@@ -50,10 +54,18 @@
       </nav>
 
       <!-- Banner Section -->
-      <section class="flex justify-between items-end mt-52">
-        <div class="w-1/2">
-          <h1 class="noto-serif-regular font-black text-[4rem]">
-            ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span>
+      <section
+        class="flex flex-col-reverse sm:flex-row justify-between items-end mt-9 sm:mt-52"
+      >
+        <div class="sm:w-1/2 mx-4 sm:mx-0">
+          <h1
+            class="noto-serif-regular font-black text-2xl sm:text-[4rem] mb-3 sm:mb-0 mt-7 sm:mt-0"
+          >
+            ALWAYS
+            <span class="text-[#E95A08]"
+              >FRESH <br class="sm:hidden" />
+              FLOWERS</span
+            >
           </h1>
           <p class="text-xl text-[#00000080]">
             Indulge your senses with the beauty and fragrance of our fresh
@@ -62,7 +74,7 @@
           </p>
         </div>
         <div>
-          <img src="./assets/hero-flower.png" alt="" />
+          <img class="h-[245px] sm:h-auto" src="./assets/hero-flower.png" alt="" />
         </div>
       </section>
     </header>
@@ -70,7 +82,7 @@
     <!-- --------------Main----------------- -->
     <main class="mt-32 text-center">
       <!-- Our Plants Section -->
-      <section class="container mx-auto">
+      <section class="sm:container sm:mx-auto mx-4">
         <h2 class="noto-serif-regular text-5xl">
           <span class="text-[#E95A08]">Our</span> Plants
         </h2>
@@ -79,7 +91,7 @@
           shop. From <br />
           classic roses to exotic blooms, we offer a wide variety of fresh.
         </p>
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
           <div class="flex flex-col">
             <img src="./assets/sample-flower-image.png" alt="" />
             <div class="my-7">
@@ -148,20 +160,29 @@
       </section>
 
       <!-- Plants Lover Section -->
-      <section class="mt-56 mb-32 container mx-auto flex justify-between items-center">
-        <div class="w-8/17 relative border">
-          <img class="" src="./assets/flower-store.png" alt="" />
-          <img class="absolute w-[286px] right-[-100px] top-[-125px] box-shadow border" src="./assets/trusted-badge.png" alt="">
+      <section
+        class="mt-56 mb-32 sm:container sm:mx-auto flex flex-col sm:flex-row justify-between items-center mx-4"
+      >
+        <div class="sm:w-8/17 relative">
+          <img class="w-full" src="./assets/flower-store.png" alt="" />
+          <img
+            class="absolute w-[286px] right-[-100px] top-[-125px] box-shadow hidden sm:block"
+            src="./assets/trusted-badge.png "
+            alt=""
+          />
         </div>
-        <div class="w-8/17 text-left">
-          <h2 class="noto-serif-regular text-5xl/normal mb-5">Flower & Plants <br> Lover</h2>
-          <ul class="list-disc text-xl text-[#00000080] ml-5">
-            <li class="mb-5">
+        <div class="sm:w-8/17 text-left">
+          <h2 class="noto-serif-regular text-2xl mt-9 sm:mt-0 sm:text-5xl/normal mb-11">
+            Flower & Plants <br class="hidden sm:block" />
+            Lover
+          </h2>
+          <ul class="list-disc sm:text-2xl text-[#00000080] ml-5">
+            <li class="mb-9">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
             </li>
-            <li class="mb-5">
+            <li class="mb-9">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
@@ -176,34 +197,34 @@
       </section>
 
       <!-- Latest Deals Section -->
-      <section class="my-32 container mx-auto">
-        <h2 class="noto-serif-regular text-5xl">
+      <section class="my-32 sm:container sm:mx-auto mx-4">
+        <h2 class="noto-serif-regular text-2xl sm:text-5xl">
           <span class="text-[#E95A08]">Latest</span> Deals
         </h2>
-        <p class="text-[#00000080] mb-12 mt-4">
+        <p class="text-[#00000080] sm:text-xl mb-12 mt-4">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From <br />
           classic roses to exotic blooms, we offer a wide variety of fresh.
         </p>
 
-        <div class="grid grid-cols-3 grid-rows-2 gap-7 grid-flow-col">
+        <div class="sm:grid sm:grid-cols-3 sm:grid-rows-2 gap-7 grid-flow-col">
           <div
-            class="relative h-[210px] rounded-2xl grid items-center bg-[url(./assets/deal-bloom.png)] bg-cover bg-center"
+            class="relative h-[210px] rounded-2xl grid items-center bg-[url(./assets/deal-bloom.png)] bg-cover bg-center mb-5 sm:mb-0"
           >
             <div class="absolute inset-0 bg-[#00000080] rounded-2xl"></div>
             <div class="relative z-10 text-white">
-              <h3 class="noto-serif-regular text-xl mb-5">
+              <h3 class="noto-serif-regular text-xl mb-5 ">
                 60% Off | Bloom Plant
               </h3>
               <p><a class="underline" href="#">Shop Now</a></p>
             </div>
           </div>
           <div
-            class="relative h-[210px] rounded-2xl grid items-center bg-[url(./assets/deal-ana.png)] bg-cover bg-center"
+            class="relative h-[210px] rounded-2xl grid items-center bg-[url(./assets/deal-ana.png)] bg-cover bg-center mb-5 sm:mb-0"
           >
             <div class="absolute inset-0 bg-[#00000080] rounded-2xl"></div>
             <div class="relative z-10 text-white">
-              <h3 class="noto-serif-regular text-xl mb-5">
+              <h3 class="noto-serif-regular text-xl mb-5 ">
                 30% Off | Ana Plant
               </h3>
               <p><a class="underline" href="#">Shop Now</a></p>
@@ -212,14 +233,14 @@
 
           <div class="col-span-2 row-span-2 rounded-3xl grid items-center">
             <div
-              class="relative h-[445px] rounded-2xl grid items-center bg-[url(./assets/deal-zabo.png)] bg-cover bg-center"
+              class="relative sm:h-[445px] h-[210px] rounded-2xl grid items-center bg-[url(./assets/deal-zabo.png)] bg-cover bg-center"
             >
               <div class="absolute inset-0 bg-[#00000080] rounded-2xl"></div>
               <div class="relative z-10 text-white">
-                <h3 class="noto-serif-regular text-4xl mb-5">
+                <h3 class="noto-serif-regular text-xl sm:text-4xl mb-5">
                   25% Off | Zabo Plant
                 </h3>
-                <p><a class="underline text-2xl" href="#">Shop Now</a></p>
+                <p><a class="underline sm:text-2xl" href="#">Shop Now</a></p>
               </div>
             </div>
           </div>
@@ -229,18 +250,20 @@
       <!-- Subscribe Section -->
       <section class="mt-28">
         <div
-          class="bg-[url(./assets/news-letter-bg.png)] bg-cover bg-center py-48"
+          class="bg-[url(./assets/news-letter-bg.png)] bg-cover bg-center py-20 sm:py-48"
         >
-          <h2 class="noto-serif-regular text-5xl text-white my-6">
+          <h2 class="noto-serif-regular text-xl sm:text-5xl text-white my-6">
             Join the colorful Bunch
           </h2>
           <div>
             <input
-              class="bg-white w-[644px] p-3 outline-none"
+              class="bg-white w-[218px] sm:w-[644px] p-3 outline-none"
               type="text"
               placeholder="Write Email"
             />
-            <button class="bg-[#E95A08] p-3 text-white font-semibold -ml-3">
+            <button
+              class="bg-[#E95A08] p-3 px-5 sm:px-14 text-white font-semibold -ml-3 hover:bg-[#e93508]"
+            >
               Subscribe
             </button>
           </div>
@@ -249,17 +272,17 @@
     </main>
 
     <!-- --------------Footer----------------- -->
-    <footer class="container mx-auto">
-      <section class="flex justify-between py-12">
-        <div class="w-1/5">
+    <footer class="container mx-4 sm:mx-auto">
+      <section class="flex flex-col sm:flex-row justify-between py-12">
+        <div class="sm:w-1/5">
           <img class="mb-4" src="./assets/logo.png" alt="" />
-          <p class="text-2xl text-[#00000080]">
+          <p class="text-2xl text-[#00000080] mb-5 sm:mb-0">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop.
           </p>
         </div>
 
-        <div class="flex w-2/5 text-xl text-[#00000080] justify-around">
+        <div class="flex flex-col sm:flex-row sm:w-2/5 text-xl text-[#00000080] justify-around">
           <ul class="flex flex-col gap-8 mr-28">
             <li>Home</li>
             <li>About Us</li>
@@ -276,8 +299,8 @@
           </ul>
         </div>
 
-        <div class="w-1/5">
-          <div class="flex gap-6 items-center justify-end">
+        <div class="sm:w-1/5">
+          <div class="flex gap-6 items-center sm:justify-end mt-7 sm:mt-0">
             <img src="assets/icon-linkedin.png" alt="" />
             <img class="h-7" src="assets/icon-twitter.png" alt="" />
             <img src="assets/icon-facebook.png" alt="" />
