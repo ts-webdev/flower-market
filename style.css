@@ -17,3 +17,6 @@
   font-style: normal;
 }
 
+.box-shadow{
+    filter: drop-shadow(0px 10px 4px #00000080);
+}
