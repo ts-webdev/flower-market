@@ -68,9 +68,9 @@
     </header>
 
     <!-- --------------Main----------------- -->
-    <main class="container mx-auto mt-32 text-center">
+    <main class="mt-32 text-center">
       <!-- Out Plants Section -->
-      <section>
+      <section class="container mx-auto">
         <h2 class="noto-serif-regular text-5xl">
           <span class="text-[#E95A08]">Our</span> Plants
         </h2>
@@ -148,7 +148,7 @@
       </section>
 
       <!-- Latest Deals Section -->
-      <section class="my-32">
+      <section class="my-32 container mx-auto">
         <h2 class="noto-serif-regular text-5xl">
           <span class="text-[#E95A08]">Latest</span> Deals
         </h2>
@@ -159,13 +159,14 @@
         </p>
 
         <div class="grid grid-cols-3 grid-rows-2 gap-7 grid-flow-col">
-
           <div
             class="relative h-[210px] rounded-2xl grid items-center bg-[url(./assets/deal-bloom.png)] bg-cover bg-center"
           >
             <div class="absolute inset-0 bg-[#00000080] rounded-2xl"></div>
             <div class="relative z-10 text-white">
-              <h3 class="noto-serif-regular text-xl mb-5">60% Off | Bloom Plant</h3>
+              <h3 class="noto-serif-regular text-xl mb-5">
+                60% Off | Bloom Plant
+              </h3>
               <p><a class="underline" href="#">Shop Now</a></p>
             </div>
           </div>
@@ -174,28 +175,88 @@
           >
             <div class="absolute inset-0 bg-[#00000080] rounded-2xl"></div>
             <div class="relative z-10 text-white">
-              <h3 class="noto-serif-regular text-xl mb-5">30% Off | Ana Plant</h3>
+              <h3 class="noto-serif-regular text-xl mb-5">
+                30% Off | Ana Plant
+              </h3>
               <p><a class="underline" href="#">Shop Now</a></p>
             </div>
           </div>
 
-          <div
-            class="bg-slate-300 col-span-2 row-span-2 rounded-3xl grid items-center"
-          >
+          <div class="col-span-2 row-span-2 rounded-3xl grid items-center">
             <div
-            class="relative h-[445px] rounded-2xl grid items-center bg-[url(./assets/deal-zabo.png)] bg-cover bg-center"
-          >
-            <div class="absolute inset-0 bg-[#00000080] rounded-2xl"></div>
-            <div class="relative z-10 text-white">
-              <h3 class="noto-serif-regular text-4xl mb-5">25% Off | Zabo Plant</h3>
-              <p><a class="underline text-2xl" href="#">Shop Now</a></p>
+              class="relative h-[445px] rounded-2xl grid items-center bg-[url(./assets/deal-zabo.png)] bg-cover bg-center"
+            >
+              <div class="absolute inset-0 bg-[#00000080] rounded-2xl"></div>
+              <div class="relative z-10 text-white">
+                <h3 class="noto-serif-regular text-4xl mb-5">
+                  25% Off | Zabo Plant
+                </h3>
+                <p><a class="underline text-2xl" href="#">Shop Now</a></p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Subscribe Section -->
+      <section class="mt-28">
+        <div
+          class="bg-[url(./assets/news-letter-bg.png)] bg-cover bg-center py-48"
+        >
+          <h2 class="noto-serif-regular text-5xl text-white my-6">
+            Join the colorful Bunch
+          </h2>
+          <div>
+            <input
+              class="bg-white w-[644px] p-3 outline-none"
+              type="text"
+              placeholder="Write Email"
+            />
+            <button class="bg-[#E95A08] p-3 text-white font-semibold -ml-3">
+              Subscribe
+            </button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <!-- --------------Footer----------------- -->
+    <footer class="container mx-auto">
+      <section class="flex justify-between py-12">
+        <div class="w-1/4">
+          <img class="mb-4" src="./assets/logo.png" alt="" />
+          <p class="text-xl text-[#00000080]">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+
+        <div class="flex w-1/4 text-xl text-[#00000080]">
+          <ul class="flex flex-col gap-8 mr-28">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+          </ul>
+          <ul class="flex flex-col gap-8">
+            <li>Featuers</li>
+            <li>Pricing</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Help Center</li>
+          </ul>
+        </div>
+
+        <div class="w-1/4">
+          <div class="flex gap-6 items-center">
+            <img src="assets/icon-linkedin.png" alt="" />
+            <img class="h-7" src="assets/icon-twitter.png" alt="" />
+            <img src="assets/icon-facebook.png" alt="" />
+            <img src="assets/icon-youtube.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
